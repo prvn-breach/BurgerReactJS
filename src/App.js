@@ -8,6 +8,7 @@ import Orders from "./containers/orders/orders";
 
 class App extends Component {
 	render() {
+		let ex = '';
 		return (
 			<div>
 				<Layout>
