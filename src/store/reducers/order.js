@@ -36,6 +36,17 @@ const reducer = (state = initialState, action) => {
                 error: true,
                 loading: false
             }
+        case actionTypes.INIT_ORDERS:
+            return {
+                ...state,
+                loading: true
+            }
+        case actionTypes.SET_ORDERS:
+            return {
+                ...state,
+                orders: action.orders,
+                loading: false
+            }
         default:
             return state;
     }
